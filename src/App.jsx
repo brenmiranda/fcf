@@ -213,8 +213,6 @@ const FitnessRecommendationApp = () => {
   const getExactMatches = (activityId) => {
     return classes.filter(cls => cls.primaryTag === activityId);
   };
-
-  // Recommendation algorithm for individual classes
   const getClassRecommendations = (selectedClass) => {
     return classes
       .filter(cls => cls.id !== selectedClass.id) // Exclude the selected class
